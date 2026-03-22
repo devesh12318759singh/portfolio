@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Devesh Singh · ML Portfolio</title>
+  <meta name="description" content="Portfolio of Devesh Singh — Machine Learning & Data Science projects, achievements and contact." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-theme="aurora">
+  <!-- ===== Sticky Nav ===== -->
+  <header class="nav">
+    <div class="nav__inner container">
+      <a href="#top" class="brand">Devesh Singh<span>.</span></a>
+
+      <nav class="nav__links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+        <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+      </nav>
+
+      <button id="themeBtn" class="nav__theme" aria-label="Change background">Theme</button>
+
+      <button class="nav__toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero section" id="top">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <p class="eyebrow">Machine Learning · Natural Language Processing</p>
+        <h1 class="hero__title">Hi, I’m <span class="grad">Devesh Singh</span></h1>
+        <p class="hero__subtitle">
+          B.Tech AI & ML student passionate about Machine Learning, Deep Learning & NLP,
+          and building intelligent data‑driven systems.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
+          <a class="btn" href="#projects">View Projects</a>
+          <a class="btn btn--line" href="https://github.com/devesh12318759singh" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn--line" href="https://www.linkedin.com/in/deveshsingh04" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hero__visual" id="heroVisual">
+        <div class="avatar__ring"></div>
+        <img id="avatarImg" class="avatar" src="images/profile.png" alt="Profile photo" />
+        <div class="orb orb--one"></div>
+        <div class="orb orb--two"></div>
+      </div>
+    </div>
+    <div class="divider"></div>
+  </section>
+
+  <!-- ===== About (single card) ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section__title">About Me</h2>
+
+      <div class="about__solo card glass reveal">
+        <h3 class="about__headline">Turning Data Into Intelligent Systems</h3>
+        <p class="about__bio">
+          I’m a Machine Learning practitioner focused on building practical systems that learn from data and
+          deliver value. I enjoy the full lifecycle: exploring data, crafting features, selecting and tuning
+          models, validating results, and iterating with clear, explainable outcomes.
+        </p>
+        <p class="about__bio">
+          Recently, I’ve been deep into <strong>NLP</strong>—from classic TF‑IDF pipelines to transformer‑based
+          models—shipping clean, reproducible code and measurable improvements.
+        </p>
+        <div class="about__tags">
+          <span class="tag">End‑to‑End ML</span>
+          <span class="tag">NLP</span>
+          <span class="tag">Model Evaluation</span>
+          <span class="tag">Reproducibility</span>
+          <span class="tag">Clean Code</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Skills (merged ML+NLP + 5 items per card) ===== -->
+  <section id="skills" class="section alt">
+    <div class="container">
+      <h2 class="section__title">Skills</h2>
+
+      <div class="skills__grid">
+        <!-- Programming Languages: up to 5 -->
+        <div class="card reveal">
+          <h3>Programming Languages</h3>
+          <div class="chips">
+            <span class="chip">C++</span>
+            <span class="chip">Java</span>
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+          </div>
+        </div>
+
+        <!-- ML + NLP merged: exactly 5 -->
+        <div class="card reveal">
+          <h3>ML & NLP</h3>
+          <div class="chips">
+            <span class="chip">Feature Engineering & Pipelines</span>
+            <span class="chip">Tree Ensembles (RF/XGBoost/LightGBM)</span>
+            <span class="chip">Vectorization (TF‑IDF, Word2Vec)</span>
+            <span class="chip">Transformers/BERT (fine‑tuning basics)</span>
+            <span class="chip">Hugging Face & PyTorch</span>
+          </div>
+        </div>
+
+        <!-- Libraries & Tools: exactly 5 -->
+        <div class="card reveal">
+          <h3>Libraries & Tools</h3>
+          <div class="chips">
+            <span class="chip">NumPy</span>
+            <span class="chip">Pandas</span>
+            <span class="chip">scikit‑learn</span>
+            <span class="chip">Matplotlib/Seaborn</span>
+            <span class="chip">Git & GitHub</span>
+          </div>
+        </div>
+
+        <!-- Professional: exactly 5 -->
+        <div class="card reveal">
+          <h3>Professional</h3>
+          <div class="chips">
+            <span class="chip">Problem Solving</span>
+            <span class="chip">Team Management</span>
+            <span class="chip">Communication</span>
+            <span class="chip">Collaboration</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Projects ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section__title">Projects</h2>
+      <div id="projectsGrid" class="projects__grid"></div>
+    </div>
+  </section>
+
+  <!-- ===== Achievements ===== -->
+  <section id="achievements" class="section alt">
+    <div class="container">
+      <h2 class="section__title">Achievements</h2>
+      <div class="band__inner reveal">
+        <div class="badge">
+          <span class="emoji">🏆</span>
+          <div><h4>HackerRank</h4><p>5⭐ in Problem Solving</p></div>
+        </div>
+        <div class="badge">
+          <span class="emoji">🧠</span>
+          <div><h4>LeetCode</h4><p>200+ DSA problems solved</p></div>
+        </div>
+        <div class="badge">
+          <span class="emoji">📈</span>
+          <div><h4>Kaggle</h4><p>Top ~30% in House Prices challenge</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact (Enhanced) ===== -->
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2 class="section__title">Contact</h2>
+
+      <div class="contact__enhanced card glass reveal">
+        <div class="contact__info">
+          <h3>Let’s Connect</h3>
+          <p class="contact__text">
+            Have a project, opportunity, or idea? I’d love to hear from you.
+          </p>
+          <ul class="contact__list">
+            <li><strong>Email:</strong> <a href="mailto:devadi1078@gmail.com">devadi1078@gmail.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/devesh12318759singh" target="_blank" rel="noopener noreferrer">github.com/devesh12318759singh</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deveshsingh04" target="_blank" rel="noopener noreferrer">linkedin.com/in/deveshsingh04</a></li>
+          </ul>
+        </div>
+
+        <div class="contact__cta">
+          <h3>Work With Me</h3>
+          <p>Open to internships, ML/DS projects, and collaborations.</p>
+          <div class="contact__actions">
+            <a class="btn btn--primary" href="mailto:devadi1078@gmail.com?subject=Hello%20Devesh&body=Hi%20Devesh%2C%0A%0A">Email Me</a>
+            <a class="btn btn--line" href="resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">© <span id="year"></span> Devesh Singh · Built with HTML, CSS & JS</div>
+  </footer>
+
+  <!-- Optional 3D tilt effect -->
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+  <!-- Your script -->
+  <script src="script.js"></script>
+</body>
+</html>
