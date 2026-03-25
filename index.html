@@ -25,8 +25,10 @@
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#achievements">Achievements</a>
+        <a href="#education">Education</a>
+        <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
-        <a href="resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <a class="nav__resume" href="resume.pdf" download="Devesh_Singh_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
       </nav>
 
       <button id="themeBtn" class="nav__theme" aria-label="Change background">Theme</button>
@@ -37,9 +39,17 @@
     </div>
   </header>
 
-  <!-- ===== Hero ===== -->
-  <section class="hero section" id="top">
-    <div class="container hero__grid">
+  <!-- ===== Hero (Premium Extreme Bleed Layout) ===== -->
+  <section class="hero" id="top">
+    <!-- Unbound visual that touches the extreme right edge -->
+    <div class="hero__visual" id="heroVisual">
+      <div class="avatar__ring"></div>
+      <img id="avatarImg" class="avatar" src="profile.png" alt="Profile photo" />
+      <div class="orb orb--one"></div>
+      <div class="orb orb--two"></div>
+    </div>
+
+    <div class="container">
       <div class="hero__content">
         <p class="eyebrow">Machine Learning · Natural Language Processing</p>
         <h1 class="hero__title">Hi, I’m <span class="grad">Devesh Singh</span></h1>
@@ -49,18 +59,11 @@
         </p>
 
         <div class="hero__cta">
-          <a class="btn btn--primary" href="resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a>
-          <a class="btn" href="#projects">View Projects</a>
+          <!-- <a class="btn btn--primary" href="resume.pdf" download="Devesh_Singh_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a> -->
+          <a class="btn btn--line" href="#projects">View Projects</a>
           <a class="btn btn--line" href="https://github.com/devesh12318759singh" target="_blank" rel="noopener noreferrer">GitHub</a>
           <a class="btn btn--line" href="https://www.linkedin.com/in/deveshsingh04" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-      </div>
-
-      <div class="hero__visual" id="heroVisual">
-        <div class="avatar__ring"></div>
-        <img id="avatarImg" class="avatar" src="profile.png" alt="Profile photo" />
-        <div class="orb orb--one"></div>
-        <div class="orb orb--two"></div>
       </div>
     </div>
     <div class="divider"></div>
@@ -83,11 +86,10 @@
           models—shipping clean, reproducible code and measurable improvements.
         </p>
         <div class="about__tags">
-          <span class="tag">End‑to‑End ML</span>
+          <span class="tag">Machine Learning</span>
           <span class="tag">NLP</span>
           <span class="tag">Model Evaluation</span>
           <span class="tag">Reproducibility</span>
-          <span class="tag">Clean Code</span>
         </div>
       </div>
     </div>
@@ -100,8 +102,8 @@
 
       <div class="skills__grid">
         <!-- Programming Languages: up to 5 -->
-        <div class="card reveal">
-          <h3>Programming Languages</h3>
+        <div class="card glass reveal" data-tilt data-tilt-max="4" data-tilt-speed="400">
+          <h3>💻 Programming Languages</h3>
           <div class="chips">
             <span class="chip">C++</span>
             <span class="chip">Java</span>
@@ -111,37 +113,41 @@
         </div>
 
         <!-- ML + NLP merged: exactly 5 -->
-        <div class="card reveal">
-          <h3>ML & NLP</h3>
+        <div class="card glass reveal" data-tilt data-tilt-max="4" data-tilt-speed="400">
+          <h3>🧠 ML & NLP</h3>
           <div class="chips">
-            <span class="chip">Feature Engineering & Pipelines</span>
-            <span class="chip">Tree Ensembles (RF/XGBoost/LightGBM)</span>
-            <span class="chip">Vectorization (TF‑IDF, Word2Vec)</span>
-            <span class="chip">Transformers/BERT (fine‑tuning basics)</span>
+            <span class="chip">Feature Engineering</span>
+            <span class="chip">NLTK/SpaCy</span>
+            <span class="chip">CNN</span>
+            <span class="chip">Transformers</span>
             <span class="chip">Hugging Face & PyTorch</span>
           </div>
         </div>
 
         <!-- Libraries & Tools: exactly 5 -->
-        <div class="card reveal">
-          <h3>Libraries & Tools</h3>
+        <div class="card glass reveal" data-tilt data-tilt-max="4" data-tilt-speed="400">
+          <h3>🛠️ Libraries & Tools</h3>
           <div class="chips">
+            <span class="chip">Git & GitHub</span>
             <span class="chip">NumPy</span>
             <span class="chip">Pandas</span>
             <span class="chip">scikit‑learn</span>
             <span class="chip">Matplotlib/Seaborn</span>
-            <span class="chip">Git & GitHub</span>
+            <span class="chip">Google Colab</span>
+            <span class="chip">VS code</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Jenkins</span>
           </div>
         </div>
 
         <!-- Professional: exactly 5 -->
-        <div class="card reveal">
-          <h3>Professional</h3>
+        <div class="card glass reveal" data-tilt data-tilt-max="4" data-tilt-speed="400">
+          <h3>✨ Professional</h3>
           <div class="chips">
             <span class="chip">Problem Solving</span>
-            <span class="chip">Team Management</span>
-            <span class="chip">Communication</span>
-            <span class="chip">Collaboration</span>
+            <span class="chip">Active Listner</span>
+            <span class="chip">Quick Learner</span>
+            <span class="chip">Adaptability</span>
           </div>
         </div>
       </div>
@@ -177,8 +183,74 @@
     </div>
   </section>
 
+  <!-- ===== Education ===== -->
+  <section id="education" class="section">
+    <div class="container">
+      <h2 class="section__title">Education</h2>
+      
+      <div class="timeline reveal">
+        <div class="timeline__item glass card">
+          <div class="timeline__icon">🎓</div>
+          <div class="timeline__content">
+            <h3 class="timeline__title">Bachelor of Technology – CSE AI and ML</h3>
+            <p class="timeline__org">Lovely Professional University · Phagwara, Punjab</p>
+            <div class="badges" style="margin-top: 12px; padding: 0;">
+              <span class="badge">Aug 2023 – 27</span>
+              <span class="badge">CGPA: 7.84</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline__item glass card">
+          <div class="timeline__icon">🏫</div>
+          <div class="timeline__content">
+            <h3 class="timeline__title">Intermediate</h3>
+            <p class="timeline__org">Holy Point Academy · Etawah, UP</p>
+            <div class="badges" style="margin-top: 12px; padding: 0;">
+              <span class="badge">2021 – 22</span>
+              <span class="badge">Percentage: 87%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Certificates ===== -->
+  <section id="certificates" class="section alt">
+    <div class="container">
+      <h2 class="section__title">Certificates</h2>
+
+      <div class="projects__grid">
+        <div class="card glass cert__card reveal" data-tilt data-tilt-max="4" data-tilt-speed="400">
+          <div class="cert__icon">📜</div>
+          <h3>Data Structures & Algorithms Using Python</h3>
+          <p class="lead">CSE Pathshala</p>
+          <div class="cert__meta">
+            <span>Completed: Jun 2025</span>
+          </div>
+          <div class="cert__actions">
+            <a class="btn btn--sm btn--primary" href="CSE_pathshala_DSA.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+          </div>
+        </div>
+
+        <div class="card glass cert__card reveal" data-tilt data-tilt-max="4" data-tilt-speed="400">
+          <div class="cert__icon">🌐</div>
+          <h3>Computer Communications</h3>
+          <p class="lead">Coursera</p>
+          <div class="cert__meta">
+            <span>Completed: Aug 2024</span>
+          </div>
+          <div class="cert__actions">
+            <a class="btn btn--sm btn--primary" href="Computer_networking.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== Contact (Enhanced) ===== -->
-  <section id="contact" class="section alt">
+  <section id="contact" class="section">
     <div class="container">
       <h2 class="section__title">Contact</h2>
 
@@ -200,7 +272,7 @@
           <p>Open to internships, ML/DS projects, and collaborations.</p>
           <div class="contact__actions">
             <a class="btn btn--primary" href="mailto:devadi1078@gmail.com?subject=Hello%20Devesh&body=Hi%20Devesh%2C%0A%0A">Email Me</a>
-            <a class="btn btn--line" href="resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+            <a class="btn btn--line" href="resume.pdf" download="Devesh_Singh_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
           </div>
         </div>
       </div>
