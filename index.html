@@ -1,10 +1,12 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Devesh Singh · ML Portfolio</title>
-  <meta name="description" content="Portfolio of Devesh Singh — Machine Learning & Data Science projects, achievements and contact." />
+  <meta name="description"
+    content="Portfolio of Devesh Singh — Machine Learning & Data Science projects, achievements and contact." />
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,6 +16,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body data-theme="aurora">
   <!-- ===== Sticky Nav ===== -->
   <header class="nav">
@@ -28,7 +31,13 @@
         <a href="#education">Education</a>
         <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
-        <a class="nav__resume" href="resume.pdf" download="Devesh_Singh_Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        <div class="resume-hover-container">
+          <a class="nav__resume" href="resume.pdf" download="Devesh_Singh_Resume.pdf" target="_blank"
+            rel="noopener noreferrer">Resume</a>
+          <div class="resume-preview">
+            <iframe src="resume.pdf" title="Resume Preview"></iframe>
+          </div>
+        </div>
       </nav>
 
       <button id="themeBtn" class="nav__theme" aria-label="Change background">Theme</button>
@@ -41,13 +50,7 @@
 
   <!-- ===== Hero (Premium Extreme Bleed Layout) ===== -->
   <section class="hero" id="top">
-    <!-- Unbound visual that touches the extreme right edge -->
-    <div class="hero__visual" id="heroVisual">
-      <div class="avatar__ring"></div>
-      <img id="avatarImg" class="avatar" src="profile.png" alt="Profile photo" />
-      <div class="orb orb--one"></div>
-      <div class="orb orb--two"></div>
-    </div>
+
 
     <div class="container">
       <div class="hero__content">
@@ -61,8 +64,10 @@
         <div class="hero__cta">
           <!-- <a class="btn btn--primary" href="resume.pdf" download="Devesh_Singh_Resume.pdf" target="_blank" rel="noopener noreferrer">View Resume</a> -->
           <a class="btn btn--line" href="#projects">View Projects</a>
-          <a class="btn btn--line" href="https://github.com/devesh12318759singh" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a class="btn btn--line" href="https://www.linkedin.com/in/deveshsingh04" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn--line" href="https://github.com/devesh12318759singh" target="_blank"
+            rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn--line" href="https://www.linkedin.com/in/deveshsingh04" target="_blank"
+            rel="noopener noreferrer">LinkedIn</a>
         </div>
       </div>
     </div>
@@ -169,15 +174,24 @@
       <div class="band__inner reveal">
         <div class="badge">
           <span class="emoji">🏆</span>
-          <div><h4>HackerRank</h4><p>5⭐ in Problem Solving</p></div>
+          <div>
+            <h4>HackerRank</h4>
+            <p>5⭐ in Problem Solving</p>
+          </div>
         </div>
         <div class="badge">
           <span class="emoji">🧠</span>
-          <div><h4>LeetCode</h4><p>200+ DSA problems solved</p></div>
+          <div>
+            <h4>LeetCode</h4>
+            <p>220+ DSA problems solved</p>
+          </div>
         </div>
         <div class="badge">
           <span class="emoji">📈</span>
-          <div><h4>Kaggle</h4><p>Top ~30% in House Prices challenge</p></div>
+          <div>
+            <h4>Kaggle</h4>
+            <p>Top ~30% in House Prices challenge</p>
+          </div>
         </div>
       </div>
     </div>
@@ -187,7 +201,7 @@
   <section id="education" class="section">
     <div class="container">
       <h2 class="section__title">Education</h2>
-      
+
       <div class="timeline reveal">
         <div class="timeline__item glass card">
           <div class="timeline__icon">🎓</div>
@@ -212,6 +226,18 @@
             </div>
           </div>
         </div>
+
+        <div class="timeline__item glass card">
+          <div class="timeline__icon">🏫</div>
+          <div class="timeline__content">
+            <h3 class="timeline__title">Matriculation (10th)</h3>
+            <p class="timeline__org">Holy Point Academy · Etawah, UP</p>
+            <div class="badges" style="margin-top: 12px; padding: 0;">
+              <span class="badge">2019 – 20</span>
+              <span class="badge">Percentage: 91%</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -230,7 +256,12 @@
             <span>Completed: Jun 2025</span>
           </div>
           <div class="cert__actions">
-            <a class="btn btn--sm btn--primary" href="CSE_pathshala_DSA.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            <div class="resume-hover-container">
+              <a class="btn btn--sm btn--primary" href="CSE_pathshala_DSA.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              <div class="resume-preview cert-preview">
+                <iframe src="CSE_pathshala_DSA.pdf" title="Certificate Preview"></iframe>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -242,7 +273,12 @@
             <span>Completed: Aug 2024</span>
           </div>
           <div class="cert__actions">
-            <a class="btn btn--sm btn--primary" href="Computer_networking.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+            <div class="resume-hover-container">
+              <a class="btn btn--sm btn--primary" href="Computer_networking.pdf" target="_blank" rel="noopener noreferrer">View Certificate</a>
+              <div class="resume-preview cert-preview">
+                <iframe src="Computer_networking.pdf" title="Certificate Preview"></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -262,8 +298,10 @@
           </p>
           <ul class="contact__list">
             <li><strong>Email:</strong> <a href="mailto:devadi1078@gmail.com">devadi1078@gmail.com</a></li>
-            <li><strong>GitHub:</strong> <a href="https://github.com/devesh12318759singh" target="_blank" rel="noopener noreferrer">github.com/devesh12318759singh</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deveshsingh04" target="_blank" rel="noopener noreferrer">linkedin.com/in/deveshsingh04</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/devesh12318759singh" target="_blank"
+                rel="noopener noreferrer">github.com/devesh12318759singh</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/deveshsingh04" target="_blank"
+                rel="noopener noreferrer">linkedin.com/in/deveshsingh04</a></li>
           </ul>
         </div>
 
@@ -271,8 +309,10 @@
           <h3>Work With Me</h3>
           <p>Open to internships, ML/DS projects, and collaborations.</p>
           <div class="contact__actions">
-            <a class="btn btn--primary" href="mailto:devadi1078@gmail.com?subject=Hello%20Devesh&body=Hi%20Devesh%2C%0A%0A">Email Me</a>
-            <a class="btn btn--line" href="resume.pdf" download="Devesh_Singh_Resume.pdf" target="_blank" rel="noopener noreferrer">Download Resume</a>
+            <a class="btn btn--primary"
+              href="mailto:devadi1078@gmail.com?subject=Hello%20Devesh&body=Hi%20Devesh%2C%0A%0A">Email Me</a>
+            <a class="btn btn--line" href="resume.pdf" download="Devesh_Singh_Resume.pdf" target="_blank"
+              rel="noopener noreferrer">Download Resume</a>
           </div>
         </div>
       </div>
@@ -290,4 +330,5 @@
   <!-- Your script -->
   <script src="script.js"></script>
 </body>
+
 </html>
